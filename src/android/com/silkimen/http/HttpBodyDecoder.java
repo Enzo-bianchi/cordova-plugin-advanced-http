@@ -8,7 +8,7 @@ import java.nio.charset.CodingErrorAction;
 import java.nio.charset.MalformedInputException;
 
 public class HttpBodyDecoder {
-  private static final String[] ACCEPTED_CHARSETS = new String[] { "UTF-8", "ISO-8859-1" };
+  private static final String[] ACCEPTED_CHARSETS = new String[] { "ISO-8859-1", "UTF-8" };
 
   public static String decodeBody(byte[] body, String charsetName)
       throws CharacterCodingException, MalformedInputException {
